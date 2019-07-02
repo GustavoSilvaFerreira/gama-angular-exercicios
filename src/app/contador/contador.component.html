@@ -1,0 +1,16 @@
+<div class="text-center">
+    <button class="btn btn-primary mr-2" (click)="aumentar()">Aumentar</button>
+    <button class="btn btn-danger" (click)="diminuir()">Diminuir</button>
+</div>
+<br />
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <h2>{{ contador }}</h2>
+    </div>
+    <div class="text-center font-weight-bold">
+        <p *ngIf="contador > 2">O número é maior que 2</p>
+        <p *ngIf="contador < 2">O número é menor que 2</p>
+        <p [ngClass]="{'text-primary': contador > 5}">Numero maior que 5: texto azul</p>
+        <p [ngClass]="{'text-danger': contador < 0}">Numero menor que 0: texto vermelho</p>
+    </div>
+</div>
