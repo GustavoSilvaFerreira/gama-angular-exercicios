@@ -1,0 +1,11 @@
+<h1>Languages:</h1>
+
+<div class="row">
+    <div *ngFor="let linguagem of linguagens" class="card col-sm-4" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{ linguagem.name }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ linguagem.creator }}</h6>
+            <p class="card-text">{{ linguagem.year }}</p>
+        </div>
+    </div>
+</div>
