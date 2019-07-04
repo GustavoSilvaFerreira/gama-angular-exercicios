@@ -1,0 +1,35 @@
+<h1>New Language:</h1>
+
+<form #form="ngForm">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Id</span>
+        </div>
+        <input type="number" class="form-control" name="id" aria-label="id" aria-describedby="id" [(ngModel)]="linguagem.id" required>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+        </div>
+        <input type="text" class="form-control" name="nome" aria-label="nome" aria-describedby="nome" [(ngModel)]="linguagem.name" required>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Criador</span>
+        </div>
+        <input type="text" class="form-control" name="criador" aria-label="criador" aria-describedby="criador" [(ngModel)]="linguagem.creator" required>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Ano</span>
+        </div>
+        <input type="number" class="form-control" name="ano" aria-label="ano" aria-describedby="ano" [(ngModel)]="linguagem.year" required>
+    </div>
+
+    <br />
+
+    <button (click)="adicionarLinguagem()" class="btn btn-success" [disabled]="form.invalid">Enviar</button>
+</form>

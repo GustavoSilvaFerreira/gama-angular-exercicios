@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LinguagensService } from '../linguagens.service';
-import { Linguagens } from 'src/typings/linguagens';
+import { Linguagem } from 'src/typings/linguagem';
 
 @Component({
   selector: 'app-lista-linguagens',
@@ -9,7 +9,7 @@ import { Linguagens } from 'src/typings/linguagens';
 })
 export class ListaLinguagensComponent implements OnInit {
 
-  linguagens: Linguagens[];
+  linguagens: Linguagem[];
 
   constructor(private linguagensService: LinguagensService) { }
 
